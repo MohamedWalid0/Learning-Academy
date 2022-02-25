@@ -17,6 +17,25 @@
 - PHP 
 - Laravel 7.x
 
+## Installation 
+
+```bash
+composer install
+npm install
+```
+- then import learning_academy.sql file to database 
+
+## Usage
+
+```bash
+php artisan serve 
+```
+- visit http://127.0.0.1:8000/
+- visit http://127.0.0.1:8000/dashboard
+- use the following credentials to login
+- email : mohamed@walid.com
+- password : 111111
+
 
 ## License
 
