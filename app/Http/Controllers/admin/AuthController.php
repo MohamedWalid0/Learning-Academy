@@ -43,7 +43,6 @@ class AuthController extends Controller
     }
 
 
-
     public function logout(){
 
         auth()->guard('admin')->logout() ;

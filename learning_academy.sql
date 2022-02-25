@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2020 at 05:50 PM
+-- Generation Time: Feb 25, 2022 at 07:00 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -44,7 +44,10 @@ CREATE TABLE `admins` (
 
 INSERT INTO `admins` (`id`, `username`, `email`, `password`, `access_token`, `oAuth_token`, `created_at`, `updated_at`) VALUES
 (2, 'mohamed', 'm@gmail.com', '$2y$10$TV8ILIW1f9uWwTgv6DmwcuCnXSXTdwIMf006B2DsrQPBOa57FCHGu', NULL, NULL, '2020-09-29 15:26:09', '2020-09-29 15:26:09'),
-(12, 'Mohamed Walid', 'Mohamed Walid', '$2y$10$k0rrmeaAGn0nZYBxisD8f.2htxgwtN7tFlhGwDsBKDoZ3f2UeZxRC', NULL, 'EAAP6YomPhu4BAFcGXeZBuzF8AdrLMuaWsohKNAgyrZBMHypUcurdyZBXgcHVdAWHG7n1NGNsryQMMD8DhVsT8RH8VwuOqAQ5PLjmQqeRXkdtxv3yDPTFfdjntuccFX5f1lxAx3iZCIHEBiV3lVut1r5Tyrmcz1bydeQM29NQGQZDZD', '2020-10-03 22:14:38', '2020-10-03 22:14:38');
+(12, 'Mohamed Walid', 'Mohamed Walid', '$2y$10$k0rrmeaAGn0nZYBxisD8f.2htxgwtN7tFlhGwDsBKDoZ3f2UeZxRC', NULL, 'EAAP6YomPhu4BAFcGXeZBuzF8AdrLMuaWsohKNAgyrZBMHypUcurdyZBXgcHVdAWHG7n1NGNsryQMMD8DhVsT8RH8VwuOqAQ5PLjmQqeRXkdtxv3yDPTFfdjntuccFX5f1lxAx3iZCIHEBiV3lVut1r5Tyrmcz1bydeQM29NQGQZDZD', '2020-10-03 22:14:38', '2020-10-03 22:14:38'),
+(13, 'testacc', 'email@email.email', 'eyJpdiI6IkJSMTZDMkZaTzgrSnFBMStyeFFXWlE9PSIsInZhbHVlIjoick5hNHprYWRrZHpueXBvWThjMmNoZz09IiwibWFjIjoiMTIxMGM4MzZmN2E2MDQ0M2ZmYWFiMTNlNDE4MGJjZDYyOGEzNTljYzE3MjZjM2YyYjg5NjdkZDk2M2VkN2IwOSJ9', NULL, NULL, '2022-02-23 19:51:45', '2022-02-23 19:51:45'),
+(14, 'testacaaac', 'e@e.e', 'eyJpdiI6IjB5TXpxVGJoZitMbFROWFB3RmdxZ3c9PSIsInZhbHVlIjoiTmpjSGhJU25DYXZXWWZZNFFrWlBkUT09IiwibWFjIjoiNDEzNjJkMjMyZmNkOWYwNWYyODU0YTkxMzZkMTY1YWUwNzQ2ODUwZGRjYjQyYThkMTMwMzE0YzkxNGY1NjQxOCJ9', NULL, NULL, '2022-02-23 19:56:06', '2022-02-23 19:56:06'),
+(15, 'mohamedwalid', 'mohamed@walid.com', '$2y$10$bWMd6MoRxqpUHSZoxfBjn.QFOVdPOGW0qqAkl/noCWu1EQGa1rosO', NULL, NULL, '2022-02-23 19:57:33', '2022-02-23 19:57:33');
 
 -- --------------------------------------------------------
 
@@ -121,7 +124,9 @@ CREATE TABLE `course_student` (
 
 INSERT INTO `course_student` (`id`, `course_id`, `student_id`, `status`, `created_at`, `updated_at`) VALUES
 (5, 1, 1, 'approve', NULL, NULL),
-(8, 6, 4, 'approve', NULL, NULL);
+(8, 6, 4, 'approve', NULL, NULL),
+(9, 11, 6, 'approve', NULL, NULL),
+(10, 2, 6, 'approve', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -295,7 +300,8 @@ CREATE TABLE `students` (
 INSERT INTO `students` (`id`, `name`, `email`, `spec`, `created_at`, `updated_at`) VALUES
 (1, 'zzz', 'yousefOne@yahoo.com', 'hello update', '2020-09-29 00:13:24', '2020-10-01 00:04:50'),
 (3, 'Mohamed walid', 'yousef@yahoo.com', NULL, '2020-09-29 00:14:03', '2020-09-29 00:14:03'),
-(4, 'eslam', 'employee@email.com', 'zz', '2020-09-29 00:16:37', '2020-09-29 00:16:37');
+(4, 'eslam', 'employee@email.com', 'zz', '2020-09-29 00:16:37', '2020-09-29 00:16:37'),
+(6, 'test acc', 'test@example.test', 'test sub', '2022-02-23 19:44:50', '2022-02-23 19:44:50');
 
 -- --------------------------------------------------------
 
@@ -409,7 +415,7 @@ ALTER TABLE `trainers`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `cats`
@@ -427,7 +433,7 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT for table `course_student`
 --
 ALTER TABLE `course_student`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `feedback`
@@ -469,7 +475,7 @@ ALTER TABLE `site_contents`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `trainers`
