@@ -6,9 +6,9 @@
 
 ## Etrain learning academy
 
-- Etrain is an online booking courses .
+- Etrain is an online booking courses system.
 - Etrain is lists courses by categorization .
-- Etrain Dashboard privides to users manage courses , categories , trinees and students .
+- Etrain Dashboard privides to admins manage courses , categories , trinees and students .
 
 ## Technologies
 
